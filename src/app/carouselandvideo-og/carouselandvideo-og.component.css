@@ -1,0 +1,226 @@
+/* Carousel part */
+.carousel-indicators [data-bs-slide-to]:not(.active) {
+  width: 45px;
+  height: 3px;
+  background-color: rgb(128, 35, 35);
+  margin: 0 5px;
+}
+.carousel-indicators .active {
+  background-color: red;
+  width: 45px;
+  height: 3px;
+}
+.carousel-item {
+  width: 100%;
+  height: 600px;
+  object-fit: contain;
+}
+#carpp{
+  width: 650px;
+}
+/* promo section */
+.promo-section {
+  position: relative;
+  height: 600px;
+  margin-right: 50%;
+  overflow: hidden;
+}
+#hrr{
+  width: 600px;
+}
+.promo-section img {
+  width: 100%;
+  height: 100%;
+}
+.promo-text {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  color: rgba(255, 255, 255, 0.911);
+  letter-spacing: 2px;
+  z-index: 1;
+}
+.btn-group-lg .btn-danger {
+  transition: background-color 0.3s ease;
+}
+.btn-group-lg{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  height: 65px;
+  width:200px;
+}
+.btn-group-lg .btn-danger:hover + .btn-light, 
+.btn-group-lg .btn-danger:hover { 
+  background-color: #c62828 !important; 
+  border-color: #c62828 !important; 
+}
+.btn-light:hover{
+  background-color: #c62828 !important; 
+  border-color: #c62828 !important; 
+}
+/* Responsive section */ 
+@media (max-width: 768px) {
+  body{
+    overflow-x: hidden;
+  }
+  .col-lg-6,
+  .col-md-6,
+  .col-sm-12,
+  .col-12 {
+    display: block;
+  }
+  #carpp{
+    width: 50%;
+  }
+  #tttt{
+    margin-top: -50px;
+  }
+  #hrr{
+    width: 50%;
+  }
+  .btn-group-lg{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 55px;
+    width:200px;
+  }
+  #demo {
+    margin-bottom: 20px;
+  }
+  .carousel-inner .carousel-item img {
+    width: 100%;
+    height: 420px;
+  }
+  .promo-section {
+    width: 100%;
+    height: 420px;
+  }
+  .carousel-indicators [data-bs-slide-to]:not(.active) {
+    width: 45px;
+    height: 3px;
+    background-color: rgb(128, 35, 35);
+    margin: 0 5px;
+    margin-top: -210px;
+  }
+  .carousel-indicators .active {
+    background-color: red;
+    width: 45px;
+    height: 3px;
+    margin-top: -210px;
+  }
+}
+@media (max-width: 450px) {
+  body{
+    overflow-x: hidden;
+  }
+  .col-lg-6,
+  .col-md-6,
+  .col-sm-12,
+  .col-12 {
+    display: block;
+  }
+  #tttt{
+    margin-top: -50px;
+  }
+  
+  #hrr{
+    width: 600px !important; 
+    margin-left: 20px;
+    margin-top: -100px;
+  }
+  #carpp{
+    width: 600px !important;
+    margin-left: 10px;
+  }
+  .btn-group-lg{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 55px;
+    width:200px;
+  }
+  #demo {
+    margin-top: -50px;
+  }
+  .carousel-inner .carousel-item img {
+    width: 100%;
+    height: 300px;
+  }
+  .promo-section {
+    width: 100%;
+    height: 300px;
+    margin-top: -200px;
+  }
+  .carousel-indicators [data-bs-slide-to]:not(.active) {
+    width: 45px;
+    height: 3px;
+    background-color: rgb(128, 35, 35);
+    margin: 0 5px;
+    margin-top: -320px;
+  }
+  .carousel-indicators .active {
+    background-color: red;
+    width: 45px;
+    height: 3px;
+    margin-top: -320px;
+  }
+}
+@media screen and (max-width:380px) {
+  body{
+    overflow-x: hidden;
+  }
+  .col-lg-6,
+  .col-md-6,
+  .col-sm-12,
+  .col-12 {
+    display: block;
+  }
+  #tttt{
+    margin-top: -50px;
+    width: 420px !important;
+  }
+  
+  #hrr{
+    width: 600px !important; 
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  #carpp{
+    width: 600px !important;
+    margin-left: 10px;
+  }
+  .btn-group-lg{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 55px;
+    width:200px;
+  }
+  #demo {
+    margin-top: -50px;
+  }
+  .carousel-inner .carousel-item img {
+    width: 100%;
+    height: 400px;
+  }
+  .promo-section {
+    width: 100%;
+    height: 400px;
+    margin-top: -200px;
+  }
+  .carousel-indicators [data-bs-slide-to]:not(.active) {
+    width: 45px;
+    height: 3px;
+    background-color: rgb(128, 35, 35);
+    margin: 0 5px;
+    margin-top: -200px;
+  }
+  .carousel-indicators .active {
+    background-color: red;
+    width: 45px;
+    height: 3px;
+    margin-top: -200px;
+  }
+}

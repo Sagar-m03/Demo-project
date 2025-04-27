@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="navbar.component.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container-fluid d-none d-lg-block"
+            style="position: fixed; top: 0; z-index: 9999; background-color: rgb(255, 255, 255);">
+            <nav class="navbar navbar-expand-lg navbar-light" style="height: 140px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+                <div class="container">
+                    <div>
+                        <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#demo">
+                            <span class="navbar-toggler-icon"></span></button>
+                        <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#searchBar">
+                            <img src="../../assets/search.png" height="30" width="30" alt="Search">
+                        </button>
+                    </div>
+                    <!--Navbar start-->
+                    <div class="collapse navbar-collapse" id="demo">
+                        <ul class="navbar-nav P-3" style="margin-left: 135px;">
+                            <!--Navbar item 1-->
+                            <li class="nav-item dropdown" id="itt"><a href="javascript:;"
+                                    class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                                    style="font-weight: 600; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 16px; padding-left: 0px;">ABOUT
+                                    US</a>
+                                <span class="arrow"><img src="../../assets/down-arrow.png" class="arow" height="30" width="30" alt=""></span>
+                                <ul class="dropdown-menu" id="menu" style="margin-top: 25px; background: #f3f3f3">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                                <li><a href="" class="dropdown-link">Vision & Mission</a></li>
+                                                <li><a href="" class="dropdown-link">Quality policy</a></li>
+                                                <li><a href="" class="dropdown-link">Manufacturing Facilities</a></li>
+                                                <li><a href="" class="dropdown-link">Ewaste</a></li>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                                <li><a href="" class="dropdown-link">Company Journy</a></li>
+                                                <li><a href="" class="dropdown-link">Innovation</a></li>
+                                                <li><a href="" class="dropdown-link">Managenment Team</a></li>
+                                                <li><a href="" class="dropdown-link">Blog</a></li>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                                <li><a href="" class="dropdown-link">Deprecition policy</a></li>
+                                                <li><a href="" class="dropdown-link">Company Mailstone</a></li>
+                                                <li><a href="" class="dropdown-link">Export</a></li>
+                                                <li><a href="" class="dropdown-link">Brand</a></li>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </li>
+                            <!--Navbar item 2-->
+                            <li class="nav-item dropdown ms-4" id="ittt"><a href="" class="nav-link dropdown-toggle"
+                                    data-bs-toggle="dropdown"
+                                    style="font-weight: 600; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 16px; margin-left:0px;">CATEGORIES</a>
+                                <span class="arrow" id="arr"><img src="../../assets/down-arrow.png" height="30" class="arow" width="30" alt=""></span>
+                                <div id="trp">
+                                    <ul class="dropdown-menu" id="menu"
+                                        style="width: 1220px;margin-left: auto; margin-top: 25px; background: #f3f3f3">
+                                        <div class="container">
+                                            <div class="row ps-5 pe-5 pt-3 pb-3">
+                                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                                    <div  id="image-with-border">
+                                                    <li><a href="" class="dropdown-link"><img
+                                                                src="../../assets/television03.png" height="140"
+                                                                width="200" alt=""></a></li>
+                                                    <h5 class="text-danger ms-5"
+                                                        style="font-weight: 600; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                                        TELEVISIONS</h5></div>
+                                                    <div class="mt-5 col-md-12 col-sm-12 col-12">
+                                                        <div  id="image-with-border">
+                                                        <li><a href="" class="dropdown-link"><img
+                                                                    src="../../assets/fridge.jpeg" class="ms-3"
+                                                                    style="position: relative; left: 50px; top: -10px;"
+                                                                    height="150" width="80" alt=""></a>
+                                                        </li>
+                                                        <h5 class="text-danger ms-5"
+                                                            style="font-weight: 600; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                                            REFRIGERATORS</h5></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-md-6 col-sm-12 col-12 p-1">
+                                                    <div id="image-with-border">
+                                                    <li><a href="" class="dropdown-link"><img
+                                                                src="../../assets/aircondinor.png"
+                                                                style="position: relative; left: 10px; top: 20px;"
+                                                                height="90" width="220" alt=""></a></li>
+                                                    <h5 class="text-danger ms-5 mt-5"
+                                                        style="font-weight: 600; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                                        AIR CONDITIONERS
+                                                    </h5></div>
+                                                    <div class="mt-5 col-md-12 col-sm-12 col-12">
+                                                        <div id="image-with-border">
+                                                        <li><a href="" class="dropdown-link"><img
+                                                                    src="../../assets/thermometeron.png" height="150"
+                                                                    width="100"
+                                                                    style="position: relative; left: 50px; top: -20px;"
+                                                                    alt=""></a>
+                                                        </li>
+                                                        <h5 class="text-danger ms-5 mt-0"
+                                                            style="font-weight: 600; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                                            HEALTH CARE
+                                                        </h5></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-md-6 col-sm-12 col-12 p-1">
+                                                    <div id="image-with-border">
+                                                    <li><a href="" class="dropdown-link"><img
+                                                                src="../../assets/washing_machine.png" class="ms-5"
+                                                                height="140" width="100" alt=""></a></li>
+                                                    <h5 class="text-danger ms-4"
+                                                        style="font-weight: 600; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                                        WASHING MACHINES</h5>
+                                                    </div>
+                                                    <div class="mt-5" id="image-with-border">
+                                                        <li><a href="" class="dropdown-link"><img
+                                                                    src="../../assets/aircooler.png" height="140"
+                                                                    width="60" style="position: relative; left: 75px;"
+                                                                    alt=""></a>
+                                                        </li>
+                                                        <h5 class="text-danger ms-4 mt-1"
+                                                            style="position: relative; left: 35px; font-weight: 600; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                                            AIR
+                                                            COOLER
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-md-6 col-sm-12 col-12 p-1">
+                                                    <div id="image-with-border">
+                                                    <li><a href="" class="dropdown-link"><img
+                                                                src="../../assets/oven.png" height="130" width="220"
+                                                                alt=""></a>
+                                                    </li>
+                                                    <h5 class="text-danger mt-2 ms-5"
+                                                        style="font-weight: 600; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                                        MICROWAVE OVEN
+                                                    </h5>
+                                                </div>
+                                                    <div class="mt-5" id="image-with-border">
+                                                        <li><a href="" class="dropdown-link"><img
+                                                                    src="../../assets/Dishawasher.png" height="140"
+                                                                    width="110" style="position: relative; left: 50px;"
+                                                                    alt=""></a>
+                                                        </li>
+                                                        <h5 class="text-danger"
+                                                            style="position: relative; left: 50px; font-weight: 600; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                                            DISH
+                                                            WASHER
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!--navbar item3-->
+                            <li class="nav-item dropdown ms-4" id="itttt"><a href="" class="nav-link dropdown-toggle"
+                                    data-bs-toggle="dropdown"
+                                    style="font-weight: 600; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 16px; padding-left: 0px;">INVESTORS</a>
+                                <span class="arrow"><img src="../../assets/down-arrow.png" class="arow" height="30" width="30" alt=""></span>
+                                <div id="trpp">
+                                    <ul class="dropdown-menu" id="menu" style="width: 1220px; margin-top: 25px; background: #f3f3f3">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-4 p-5">
+                                                <li><a href="" class="dropdown-link">Brand</a></li>
+                                                <li><a href="" class="dropdown-link">Media</a></li>
+                                                <li><a href="" class="dropdown-link">Stock</a></li>
+                                                <li><a href="" class="dropdown-link">Announcenment</a></li>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 p-5">
+                                                <li><a href="" class="dropdown-link">Finacial</a></li>
+                                                <li><a href="" class="dropdown-link">Shareholder</a></li>
+                                                <li><a href="" class="dropdown-link">Investors</a></li>
+                                                <li><a href="" class="dropdown-link">Shares</a></li>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 p-5">
+                                                <li><a href="" class="dropdown-link">Deprecition policy</a></li>
+                                                <li><a href="" class="dropdown-link">Annual report</a></li>
+                                                <li><a href="" class="dropdown-link">Export</a></li>
+                                                <li><a href="" class="dropdown-link">Details</a></li>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item ms-4"><a href="" class="nav-link"
+                                    style="font-weight: 600; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 16px; padding-left: 0px;" id="it">DEALER
+                                    LOCATOR</a>
+                            </li>
+                            <li class="nav-item dropdown ms-4" id="ittttt"><a href="" class="nav-link dropdown-toggle"
+                                    data-bs-toggle="dropdown"
+                                    style="font-weight: 600; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 16px; padding-left: 0px;">LIFE
+                                    &#64; ONIDA</a>
+                                <span class="arrow"><img src="../../assets/down-arrow.png" class="arow" height="30" width="30" alt=""></span>
+                                <div id="trppp">
+                                    <ul class="dropdown-menu" id="menu" style="width: 1220px; margin-top: 25px; background: #f3f3f3">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-4 p-5">
+                                                <li><a href="" class="dropdown-link">Life &#64; Onida</a></li>
+                                            </div>
+                                            <div class="col-lg-6 col-md-4 p-5">
+                                                <li><a href="" class="dropdown-link">Careers</a></li>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <a href="" class="navbar-brand"><img src="../../assets/logo.png"
+                            style="margin-right: 140px; height: 72px; width: 140px;" class="" alt=""></a>
+                </div>
+            </nav>
+            <!-- Search Bar -->
+            <div class="collapse bg-dark p-3" id="searchBar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-6">
+                            <input type="text" class="form-control" placeholder="Search...">
+                        </div>
+                        <div class="col-sm-6 col-6">
+                            <button class="btn btn-danger">SEARCH</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--FOR MOBILE SCREEN VIEW-->
+
+        <div class="container-fluid d-block d-lg-none"
+            style="position: fixed; top: 0; z-index: 9999; background-color: rgb(255, 255, 255);">
+            <nav class="navbar navbar-expand-lg bg-light navbar-light" style="height: 85px;">
+                <div class="container">
+                    <div>
+                        <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#demo">
+                            <span class="navbar-toggler-icon"></span></button>
+                        <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#searchBar">
+                            <img src="../../assets/search.png" height="20" width="20" alt="Search">
+                        </button>
+                    </div>
+                    <a href="" class="navbar-brand" style="margin-right: 40%;"> <img src="../../assets/logo.png" class="d-block mx-auto"
+                            height="40" width="80" alt=""></a>
+                    <!--Navbar start-->
+                </div>
+                <div class="collapse navbar-collapse" id="demo" style="margin-top: 20px;">
+                    <ul class="navbar-nav ms-1 P-3 bg-light text-center" style="height: 850px; background-color: white !important;">
+                        <!--Navbar item 1-->
+                        <li class="nav-item dropdown"><a href="javascript:;" class="nav-link dropdown-toggle" id="nav"
+                                data-bs-toggle="dropdown" style="font-weight: 700; margin-left: 20px; margin-top: 10%; font-size: 18px;">ABOUT US</a>
+                                <span class="arro" style="margin-left: 20px;"><img src="../../assets/down-arrow.png" height="30" width="30" alt=""></span>
+                            <ul class="dropdown-menu mt-5" id="menu">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                            <li><a href="" class="dropdown-link">Vision & Mission</a></li>
+                                            <li><a href="" class="dropdown-link">Quality policy</a></li>
+                                            <li><a href="" class="dropdown-link">Manufacturing Facilities</a></li>
+                                            <li><a href="" class="dropdown-link">Ewaste</a></li>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                            <li><a href="" class="dropdown-link">Company Journy</a></li>
+                                            <li><a href="" class="dropdown-link">Innovation</a></li>
+                                            <li><a href="" class="dropdown-link">Managenment Team</a></li>
+                                            <li><a href="" class="dropdown-link">Blog</a></li>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                            <li><a href="" class="dropdown-link">Deprecition policy</a></li>
+                                            <li><a href="" class="dropdown-link">Company Mailstone</a></li>
+                                            <li><a href="" class="dropdown-link">Export</a></li>
+                                            <li><a href="" class="dropdown-link">Brand</a></li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <!--Navbar item 2-->
+                        <li class="nav-item dropdown ms-4"><a href="" class="nav-link dropdown-toggle"
+                                data-bs-toggle="dropdown" style="font-weight: 700; font-size: 18px;">CATEGORIES</a>
+                                <span class="arro"><img src="../../assets/down-arrow.png" height="30" width="30" alt=""></span>
+                            <ul class="dropdown-menu mt-5" id="menu" style="width: 1100px;">
+                                <div class="container">
+                                    <div class="row ps-5 pe-5 pt-3 pb-3">
+                                        <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                            <li><a href="" class="dropdown-link"><img
+                                                        src="../../assets/television03.png" height="150" width="200"
+                                                        alt=""></a></li>
+                                            <h5 class="text-danger ms-5" style="font-weight: bold;">TELEVISION</h5>
+                                            <div class="mt-5 col-md-12 col-sm-12 col-12">
+                                                <li><a href="" class="dropdown-link"></a><img
+                                                        src="../../assets/fridge.jpeg" class="ms-3"
+                                                        style="position: relative; left: 50px;" height="200" width="80"
+                                                        alt="">
+                                                </li>
+                                                <h5 class="text-danger ms-5" style="font-weight: bold;">REFRIGETORS</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-12 col-12 p-1">
+                                            <li><a href="" class="dropdown-link"><img src="../../assets/aircondinor.png"
+                                                        style="position: relative; left: -30px;" height="100"
+                                                        width="280" alt=""></a></li>
+                                            <h5 class="text-danger ms-5 mt-5" style="font-weight: bold;">AIR CONDINOR
+                                            </h5>
+                                            <div class="mt-5 col-md-12 col-sm-12 col-12">
+                                                <li><a href="" class="dropdown-link"><img
+                                                            src="../../assets/thermometer.jpg" height="180" width="100"
+                                                            style="position: relative; left: 50px;" alt=""></a>
+                                                </li>
+                                                <h5 class="text-danger ms-5 mt-3" style="font-weight: bold;">HELTH CARE
+                                                </h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-12 col-12 p-1">
+                                            <li><a href="" class="dropdown-link"><img
+                                                        src="../../assets/washing_machine.png" class="ms-5" height="150"
+                                                        width="150" alt=""></a></li>
+                                            <h5 class="text-danger ms-4" style="font-weight: bold;">WASHINH MACHINE</h5>
+                                            <div class="mt-5">
+                                                <li><a href="" class="dropdown-link"></a><img
+                                                        src="../../assets/air-coolers.png" height="200" width="100"
+                                                        style="position: relative; left: 75px;" alt="">
+                                                </li>
+                                                <h5 class="text-danger ms-5"
+                                                    style="position: relative; left: 35px; font-weight: bold;">AIR
+                                                    COOLER
+                                                </h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-12 col-12 p-1">
+                                            <li><a href="" class="dropdown-link"></a><img src="../../assets/oven.png"
+                                                    height="140" width="250" alt="">
+                                            </li>
+                                            <h5 class="text-danger mt-2 ms-5" style="font-weight: bold;">MICROWAVE OVEN
+                                            </h5>
+                                            <div class="mt-5">
+                                                <li><a href="" class="dropdown-link"></a><img
+                                                        src="../../assets/Dishawasher.png" height="200" width="140"
+                                                        style="position: relative; left: 50px;" alt="">
+                                                </li>
+                                                <h5 class="text-danger"
+                                                    style="position: relative; left: 70px; font-weight: bold;">DISH
+                                                    WASHER
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <!--navbar item3-->
+                        <li class="nav-item dropdown ms-4"><a href="" class="nav-link dropdown-toggle"
+                                data-bs-toggle="dropdown" style="font-weight: 700; font-size: 18px;">INVESTORS</a>
+                                <span class="arro"><img src="../../assets/down-arrow.png" height="30" width="30" alt=""></span>
+                            <ul class="dropdown-menu mt-5" id="menu" style="width: 690px;">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 p-5">
+                                        <li><a href="" class="dropdown-link">Brand</a></li>
+                                        <li><a href="" class="dropdown-link">Media</a></li>
+                                        <li><a href="" class="dropdown-link">Stock</a></li>
+                                        <li><a href="" class="dropdown-link">Announcenment</a></li>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 p-5">
+                                        <li><a href="" class="dropdown-link">Finacial</a></li>
+                                        <li><a href="" class="dropdown-link">Shareholder</a></li>
+                                        <li><a href="" class="dropdown-link">Investors</a></li>
+                                        <li><a href="" class="dropdown-link">Shares</a></li>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 p-5">
+                                        <li><a href="" class="dropdown-link">Deprecition policy</a></li>
+                                        <li><a href="" class="dropdown-link">Annual report</a></li>
+                                        <li><a href="" class="dropdown-link">Export</a></li>
+                                        <li><a href="" class="dropdown-link">Details</a></li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item ms-4"><a href="" class="nav-link" style="font-weight: 700; font-size: 18px;">DEALER
+                                LOCATOR</a>
+                        </li>
+                        <li class="nav-item dropdown ms-4"><a href="" class="nav-link dropdown-toggle"
+                                data-bs-toggle="dropdown" style="font-weight: 700; font-size: 18px;">LIFE &#64; ONIDA</a>
+                                <span class="arro"><img src="../../assets/down-arrow.png" height="30" width="30" alt=""></span>
+                            <ul class="dropdown-menu mt-5" id="menu" style="width: 500px;">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-4 p-5">
+                                        <li><a href="" class="dropdown-link">Life &#64; Onida</a></li>
+                                    </div>
+                                    <div class="col-lg-6 col-md-4 p-5">
+                                        <li><a href="" class="dropdown-link">Careers</a></li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Search Bar -->
+            <div class="collapse bg-dark p-3" id="searchBar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-6">
+                            <input type="text" class="form-control" placeholder="Search...">
+                        </div>
+                        <div class="col-sm-6 col-6">
+                            <button class="btn btn-danger">SEARCH</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

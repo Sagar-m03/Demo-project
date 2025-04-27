@@ -1,0 +1,76 @@
+.carousel-indicators [data-bs-slide-to]:not(.active) {
+    width: 45px;
+    height: 10px;
+    background-color: white;
+    margin: 0 5px;
+  }
+  .carousel-indicators .active {
+    background-color: red;
+    width: 45px;
+    height: 10px;
+  }
+  .carousel-item {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    overflow: hidden;
+  }
+  .carousel-control-prev{
+    position: absolute;
+    width: 30px;
+    height: 53px;
+    top: 50%;
+    left: 1%;
+  }
+  .carousel-control-next{
+    position: absolute;
+    width: 30px;
+    height: 53px;
+    top: 50%;
+    right:1%;
+  }
+  @media (max-width: 1044px) { /* For medium and small screens */
+    body{
+      overflow-x: hidden;
+    }
+      .carousel-inner img {
+          max-height: 800px; /* Reduce height for smaller screens */
+      }
+      .carousel-control-prev img, .carousel-control-next img {
+        position: absolute;
+          width: 30px; /* Reduce button size */
+          height: 53px;
+          top: 20%;
+      }
+  }
+@media (max-width: 768px) { /* For medium and small screens */
+  body{
+    overflow-x: hidden;
+  }
+    .carousel-inner img {
+        max-height: 800px; /* Reduce height for smaller screens */
+    }
+    .carousel-control-prev img, .carousel-control-next img {
+      position: absolute;
+        width: 30px; /* Reduce button size */
+        height: 53px;
+        top: 20%;
+    }
+}
+@media (max-width: 450px) { /* For medium and small screens */
+  body{
+    overflow-x: hidden;
+  }
+  .carousel-inner img {
+      max-height: 800px; /* Reduce height for smaller screens */
+  }
+  #cff{
+    width: 470px !important;
+  }
+  .carousel-control-prev img, .carousel-control-next img {
+    position: absolute;
+      width: 30px; /* Reduce button size */
+      height: 53px;
+      top: 10%;
+  }
+}
